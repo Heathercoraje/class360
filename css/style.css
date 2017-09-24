@@ -1,3 +1,15 @@
 body{
-  background-color: red;
+  background-color: #aaaaaa;
+}
+
+nav{
+  border: 0.1rem solid blue;
+}
+
+#nav-right{
+  float: right;
+}
+
+section{
+  border: 0.1rem solid red;
 }
