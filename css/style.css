@@ -1,113 +1,146 @@
-html{
-
+* {
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Raleway', sans-serif;*/
 }
 
-body{
+html {}
+
+body {
+  background-color: #aaaaaa;
   margin: 0;
 }
 
-nav{
+nav {
   border: 0.1rem solid blue;
-  position: fixed;
-  width:100%;
+  position: fixed !important;
+  width: 100%;
   top: 0;
   padding: 1rem;
 }
 
-a{
+a {
   padding: 1rem;
 }
 
-#nav-right{
+#nav-right {
   float: right;
 }
 
-section{
+section {
   border: 0.1rem solid red;
   height: 100vh;
 }
 
-#landing{
-  background-image: url('../images/02.png');
+#landing {
   background-position: center;
   background-size: cover;
+  background-image: url('../images/02.png');
 }
 
-#instructions{
+#landing::before {
+  content: '';
+  display: block;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
+
+#landing__video {
+  top: 20%;
+  margin-top: 125px;
+  left: 50%;
+  margin-left: -250px;
+  position: absolute;
+}
+
+#landing__text {
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  width: 500px;
+  height: 250px;
+  color: white;
+  border: #fff solid 1px;
+  text-align: center;
+}
+
+#instructions {
   color: white;
 }
 
-#instruct-pic{
+#instruct-pic {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/instructions.png');
   background-size: cover;
   position: relative;
   top: 11rem;
-  width:100%;
-  height:65%;
+  width: 100%;
+  height: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align:center;
+  text-align: center;
   justify-content: center;
 }
-input, textarea{
+
+input, textarea {
   border-color: #eeeeef;
   width: 80%;
-  margin:0.5rem;
+  margin: 0.5rem;
   border-radius: 0.5rem;
 }
 
-input{
+input {
   height: 2rem;
 }
 
-textarea{
+textarea {
   height: 10rem;
 }
 
-.button{
-  width:15rem;
+.button {
+  width: 15rem;
   height: 5rem;
   border-radius: 3rem;
   border: 2px solid #00AA66;
   color: white;
   background-color: green;
-  font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
-#instr-small{
+#instr-small {
   margin: 0;
   font-size: 2rem;
 }
 
-#instr-big{
+#instr-big {
   margin: 1rem 0 3rem 0;
   font-size: 4rem;
 }
 
 .section4 {
-background: #FFFF;
+  background: #FFFF;
 }
 
-#form{
-  width:50%;
-  border:3px solid blue;
+#form {
+  width: 50%;
+  border: 3px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align:center;
+  text-align: center;
   justify-content: center;
 }
 
 img {
-opacity: 0.6;
-filter: alpha(opacity=50);
-width: 100%;
-height: 100%;
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
-font-size: 250%;
-font-family: monospace;
-text-align: center;
+  font-size: 250%;
+  font-family: monospace;
+  text-align: center;
 }
