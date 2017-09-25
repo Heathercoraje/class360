@@ -1,9 +1,22 @@
+html{
+
+}
+
 body{
   background-color: #aaaaaa;
+  margin: 0;
 }
 
 nav{
   border: 0.1rem solid blue;
+  position: fixed;
+  width:100%;
+  top: 0;
+  padding: 1rem;
+}
+
+a{
+  padding: 1rem;
 }
 
 #nav-right{
@@ -12,4 +25,11 @@ nav{
 
 section{
   border: 0.1rem solid red;
+}
+
+#landing{
+  background-image: url('../images/02.png');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
