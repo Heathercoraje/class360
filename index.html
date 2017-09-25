@@ -6,7 +6,6 @@
   <title>Class360</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
   <nav>
     <a href="#landing" id="nav-left">Class360</a>
@@ -20,29 +19,51 @@
     </div>
   </nav>
   <section id="landing">
-    <h2 id="title">Explore the World in Class</h2>
-    <h4>Immersive learning through reality glasses in the class</h4>
-    <iframe src="https://www.youtube.com/embed/EXYzj6qwCCk" width="640" height="390" frameborder="0" allowfullscreen></iframe>
+    <div id="landing__content" class="landing__content">
+      <div id="landing__text" class="landing__text">
+
+        <h2 id="title">Explore the World in Class</h2>
+        <h4>Immersive learning through reality glasses in the class</h4>
+      </div>
+
+      <iframe id="landing__video" src="https://www.youtube.com/embed/EXYzj6qwCCk" width="500" height="250" frameborder="0" allowfullscreen></iframe>
+    </div>
   </section>
+
+  </nav>
+
   <section id="feature">
   </section>
   <section id="instructions">
+    <div id="instruct-pic">
+      <p id="instr-small">Instructions</p>
+      <p id="instr-big">How to start Class360</p>
+      <button class="button">Watch Video</button>
+    </div>
   </section>
-<section id="testimonial">
-  <h2>Testimonials</h2>
-  <div class="container">
-    <img src="" alt="Avatar">
-    <p><span>Sameer Mahamed</span> CEO of Alahlya School</p>
-    <p>Class360 saved our school future </p>
-  </div>
-  <div class="container">
-    <img src="" alt="Avatar">
-    <p><span >Layla Abo Ahmad</span> CEO of Alsharq elementary school.</p>
-    <p>Nothing is better than Class360</p>
-  </div>
+  <section id="testimonial" class="section4">
+    <h2>Testimonials</h2>
+    <div class="container">
+      <img src="" alt="Avatar">
+      <p><span>Sameer Mahamed</span> CEO of Alahlya School</p>
+      <p>Class360 saved our school future </p>
+    </div>
+    <div class="container">
+      <img src="" alt="Avatar">
+      <p><span >Layla Abo Ahmad</span> CEO of Alsharq elementary school.</p>
+      <p>Nothing is better than Class360</p>
+    </div>
+  </section>
   <section id="pricing">
   </section>
   <section id="contact">
+    <form action="#" method="post" id="form">
+      <input type="text" name="" value="" placeholder="Your organization">
+      <input type="text" name="" value="" placeholder="Your email">
+      <input type="text" name="" value="" placeholder="Your phone number">
+      <textarea name="" rows="4" cols="50" placeholder="Your message"></textarea>
+      <button type="submit" class="button">Submit</button>
+    </form>
   </section>
   <script type="text/javascript" src="script/index.js"></script>
 </body>
