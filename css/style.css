@@ -3,7 +3,6 @@ html{
 }
 
 body{
-  background-color: #aaaaaa;
   margin: 0;
 }
 
@@ -34,8 +33,70 @@ section{
   background-size: cover;
 }
 
+#instructions{
+  color: white;
+}
+
+#instruct-pic{
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/instructions.png');
+  background-size: cover;
+  position: relative;
+  top: 11rem;
+  width:100%;
+  height:65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  justify-content: center;
+}
+input, textarea{
+  border-color: #eeeeef;
+  width: 80%;
+  margin:0.5rem;
+  border-radius: 0.5rem;
+}
+
+input{
+  height: 2rem;
+}
+
+textarea{
+  height: 10rem;
+}
+
+.button{
+  width:15rem;
+  height: 5rem;
+  border-radius: 3rem;
+  border: 2px solid #00AA66;
+  color: white;
+  background-color: green;
+  font-size:1.5rem;
+}
+
+#instr-small{
+  margin: 0;
+  font-size: 2rem;
+}
+
+#instr-big{
+  margin: 1rem 0 3rem 0;
+  font-size: 4rem;
+}
+
 .section4 {
 background: #FFFF;
+}
+
+#form{
+  width:50%;
+  border:3px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  justify-content: center;
 }
 
 img {
