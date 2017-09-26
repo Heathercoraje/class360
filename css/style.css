@@ -199,8 +199,6 @@
   }
 
   #testimonial{
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-color: #C42739
   }
 
@@ -259,14 +257,14 @@
     margin-right: 15px;
   }
 
-  container1 img {
+  .container1 img {
     float: left;
     margin-right: 20px;
     border-radius: 50%;
   }
 
 
-  container2 img {
+  .container2 img {
     float: left;
     margin-right: 20px;
     border-radius: 50%;
