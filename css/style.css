@@ -200,15 +200,19 @@
 
   #testimonial{
     background-color: #C42739
+
   }
 
-
-  h2 {
+.section4 {
+  padding-top: 100px;
+}
+  .h222 {
     font-size: 300%;
     font-family: monospace;
     text-align: center;
   }
-  h4 {
+  .h444 {
+height: 15%;
     font-size: 300%;
     font-family: monospace;
     font-weight: lighter;
@@ -216,6 +220,7 @@
   }
 
   .container1 {
+    position: relative;
     border: 3px solid #403B3F;
     background-color: #E6C9CD;
     border-radius: 5px;
@@ -230,6 +235,7 @@
     align-items: flex-end;
   }
   .container2 {
+    position: relative;
     border: 3px solid #403B3F;
     background-color: #E6C9CD;
     border-radius: 5px;
@@ -274,14 +280,15 @@
     display: flex;
     justify-content: center;
   }
-  #pricing{
-    background-color: E1D4D6;
+  .pricing{
+    background-color: #E1D4D6;
     background-size: contain;
+    padding-top: 100px;
   }
 
   .columns {
     float: left;
-    width: 33.3%;
+    width: 32%;
     padding: 8px;
   }
 
@@ -299,8 +306,8 @@
   }
 
   .price .header {
-    background-color:#111;
-    color: white;
+    background-color:;
+    color: #302A2E;
     font-size: 25px;
   }
 
@@ -308,21 +315,25 @@
     border-bottom: 1px solid #eee;
     padding: 20px;
     text-align: center;
-  }
-  .p {
-    text-align: center;
     font-size: 25px;
     font-family: monospace;
   }
-
-  .price .grey {
-    background-color: #eee;
-    font-size: 20px;
+  .p {
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    padding-top: 30px;
+    font-style: italic;
+    letter-spacing: 15px;
+  }
+  .h22 {
+    font-size: 50px;
+    font-family: monospace;
+    text-align: center;
   }
 
-
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 400px) {
     .columns {
-      width: 100%;
+      width: 50%;
     }
   }
