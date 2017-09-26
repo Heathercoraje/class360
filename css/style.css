@@ -1,5 +1,6 @@
   * {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Asap Condensed', sans-serif;
+    letter-spacing: 2px;
   }
 
   html {}
@@ -53,14 +54,12 @@
     width: 700px;
     height: 100px;
     color: white;
-    letter-spacing: 2px;
     text-align: left;
   }
 
   #landing__text>h2 {
     margin: 0;
     font-weight: 400;
-    letter-spacing: 2px;
     font-size: 3.2rem;
     margin-bottom: 0.8rem;
   }
@@ -199,19 +198,17 @@
     font-size: 4rem;
   }
 
-  #testimonial{
+  #testimonial {
     background-color: #C42739
   }
 
-
   h2 {
     font-size: 300%;
-    font-family: monospace;
     text-align: center;
   }
+
   h4 {
     font-size: 300%;
-    font-family: monospace;
     font-weight: lighter;
     text-align: center;
   }
@@ -230,6 +227,7 @@
     flex-wrap: wrap;
     align-items: flex-end;
   }
+
   .container2 {
     border: 3px solid #403B3F;
     background-color: #E6C9CD;
@@ -248,13 +246,11 @@
 
   .container1 span {
     font-size: 25px;
-    font-family: monospace;
     margin-right: 15px;
   }
 
   .container2 span {
     font-size: 25px;
-    font-family: monospace;
     margin-right: 15px;
   }
 
@@ -264,18 +260,19 @@
     border-radius: 50%;
   }
 
-
   .container2 img {
     float: left;
     margin-right: 20px;
     border-radius: 50%;
   }
-   {
+
+  {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
   }
-  #pricing{
+
+  #pricing {
     background-color: E1D4D6;
     background-size: contain;
   }
@@ -296,11 +293,11 @@
   }
 
   .price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
   }
 
   .price .header {
-    background-color:#111;
+    background-color: #111;
     color: white;
     font-size: 25px;
   }
@@ -310,17 +307,16 @@
     padding: 20px;
     text-align: center;
   }
+
   .p {
     text-align: center;
     font-size: 25px;
-    font-family: monospace;
   }
 
   .price .grey {
     background-color: #eee;
     font-size: 20px;
   }
-
 
   @media only screen and (max-width: 600px) {
     .columns {
