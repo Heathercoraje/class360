@@ -9,14 +9,16 @@
 
 <body>
   <nav>
-    <a href="#landing" id="nav-left">Class360</a>
-    <div id="nav-right">
-      <a href="#">Home</a>
-      <a href="#">Feature</a>
-      <a href="#">Instructions</a>
-      <a href="#">Testimonial</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact</a>
+    <div id="nav-content">
+      <a href="#landing" id="nav-left">Class360</a>
+      <div id="nav-right">
+        <a href="#">Home</a>
+        <a href="#">Feature</a>
+        <a href="#">Instructions</a>
+        <a href="#">Testimonial</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </div>
     </div>
 
   </nav>
@@ -47,8 +49,8 @@
   </section>
   <section id="instructions">
     <div id="instruct-pic">
-      <p id="instr-small">Instructions</p>
-      <p id="instr-big">How to start Class360</p>
+      <p class="small">Instructions</p>
+      <p class="big">How to start Class360</p>
       <button class="button">Watch Video</button>
     </div>
   </section>
@@ -103,13 +105,21 @@
 </div>
   </section>
   <section id="contact">
-    <form action="#" method="post" id="form">
-      <input type="text" name="" value="" placeholder="Your organization">
-      <input type="text" name="" value="" placeholder="Your email">
-      <input type="text" name="" value="" placeholder="Your phone number">
-      <textarea name="" rows="4" cols="50" placeholder="Your message"></textarea>
-      <button type="submit" class="button">Submit</button>
-    </form>
+    <canvas id="canvas"></canvas>
+    <div id="form-text">
+      <div id="text">
+        <p class="small" id="contact-small">Contact</p>
+        <p class="big" id="contact-big">Let's get in touch</p>
+        <hr>
+      </div>
+      <form action="#" method="post" id="form">
+        <input type="text" name="" value="" placeholder="Your organization">
+        <input type="text" name="" value="" placeholder="Your email">
+        <input type="text" name="" value="" placeholder="Your phone number">
+        <textarea name="" rows="4" cols="50" placeholder="Your message"></textarea>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
   </section>
   <script type="text/javascript" src="script/index.js"></script>
 </body>
