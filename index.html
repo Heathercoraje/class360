@@ -5,34 +5,43 @@
   <meta charset="utf-8">
   <title>Class360</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,400i,500,500i,600,600i,700" rel="stylesheet">
 </head>
 
 <body>
   <nav>
-    <a href="#landing" id="nav-left">Class360</a>
-    <div id="nav-right">
-      <a href="#">Home</a>
-      <a href="#">Feature</a>
-      <a href="#">Instructions</a>
-      <a href="#">Testimonial</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact</a>
+    <div id="nav-content">
+      <a href="#landing" id="nav-left">Class360</a>
+      <div id="nav-right">
+        <a href="#">Home</a>
+        <a href="#">Feature</a>
+        <a href="#">Instructions</a>
+        <a href="#">Testimonial</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </div>
     </div>
 
   </nav>
   <section id="landing">
     <div id="landing__content" class="landing__content">
       <div id="landing__text" class="landing__text">
-        <h2 id="title">Explore the World in Class</h2>
+        <h2 id="title">Explore the World</br> with Class360</h2>
         <h4>Immersive learning</br>through reality glasses in the class</h4>
       </div>
-      <div class="container__video">
+      <!-- <div class="container__video">
         <iframe id="landing__video" src="https://www.youtube.com/embed/EXYzj6qwCCk" width="500" height="250" frameborder="0" allowfullscreen></iframe>
-      </div>
+      </div> -->
     </div>
-    <div class="arrow bounce">
-      <img src="file:///home/heathercoraje/Desktop/week13/class360/images/arrow.svg" alt="arrow?">
+
+    <img class="arrow bounce" src="file:///home/heathercoraje/Desktop/week13/class360/images/arrow.svg" alt="arrow">
+
+    <div class="button__container">
+      <button type="button" class="button__video">Watch Video</button>
+      <button type="button" class="button__beta">Try beta service</button>
+
     </div>
+
   </section>
 
   </nav>
@@ -47,8 +56,8 @@
   </section>
   <section id="instructions">
     <div id="instruct-pic">
-      <p id="instr-small">Instructions</p>
-      <p id="instr-big">How to start Class360</p>
+      <p class="small">Instructions</p>
+      <p class="big">How to start Class360</p>
       <button class="button">Watch Video</button>
     </div>
   </section>
@@ -59,13 +68,13 @@
     <div class="container1">
       <img src="./images" alt="Avatar">
       <p><span>Sameer Mahamed</span></p>
-      <p>   CEO of Alahlya School</p>
+      <p> CEO of Alahlya School</p>
       <p>Class360 saved our school future </p>
     </div>
     <div class="container2">
       <img src="./images/" alt="Avatar">
       <p><span>Layla Abo Ahmad</span></p>
-        <p> CEO of Alsharq elementary school</p>
+      <p> CEO of Alsharq elementary school</p>
       <p>Nothing is better than Class360</p>
     </div>
 
@@ -99,14 +108,23 @@
 </div>
   </section>
   <section id="contact">
-    <form action="#" method="post" id="form">
-      <input type="text" name="" value="" placeholder="Your organization">
-      <input type="text" name="" value="" placeholder="Your email">
-      <input type="text" name="" value="" placeholder="Your phone number">
-      <textarea name="" rows="4" cols="50" placeholder="Your message"></textarea>
-      <button type="submit" class="button">Submit</button>
-    </form>
+    <canvas id="canvas"></canvas>
+    <div id="form-text">
+      <div id="text">
+        <p class="small" id="contact-small">Contact</p>
+        <p class="big" id="contact-big">Let's get in touch</p>
+        <hr>
+      </div>
+      <form action="#" method="post" id="form">
+        <input type="text" name="" value="" placeholder="Your organization">
+        <input type="text" name="" value="" placeholder="Your email">
+        <input type="text" name="" value="" placeholder="Your phone number">
+        <textarea name="" rows="4" cols="50" placeholder="Your message"></textarea>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
   </section>
   <script type="text/javascript" src="script/index.js"></script>
 </body>
+
 </html>
