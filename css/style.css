@@ -5,24 +5,41 @@
 html {}
 
 body {
-  background-color: #aaaaaa;
   margin: 0;
 }
 
 nav {
-  border: 0.1rem solid blue;
-  position: fixed !important;
+  display: flex;
+  justify-content: center;
+  position: fixed;
   width: 100%;
   top: 0;
   padding: 1rem;
+  z-index: 999;
+  border: 0.1rem solid blue;
+}
+
+#nav-content{
+  width: 90%;
+  display: flex;
+  font-size: 1.3rem;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 0.1rem solid green;
+  line-height: 2rem;
 }
 
 a {
-  padding: 1rem;
+  padding: 0 1rem 0 1rem;
 }
 
 #nav-right {
-  float: right;
+  /*display: flex;
+  justify-content: center;*/
+}
+
+#nav-left{
+  font-size: 2rem;
 }
 
 section {
@@ -64,10 +81,6 @@ section {
   margin: 0;
 }
 
-#instructions {
-  color: white;
-}
-
 #instruct-pic {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/instructions.png');
   background-size: cover;
@@ -83,6 +96,7 @@ section {
 }
 
 input, textarea {
+  border-style: solid;
   border-color: #eeeeef;
   width: 80%;
   margin: 0.5rem;
@@ -99,7 +113,7 @@ textarea {
 
 .button {
   width: 15rem;
-  height: 5rem;
+  height: 4rem;
   border-radius: 3rem;
   border: 2px solid #00AA66;
   color: white;
@@ -107,16 +121,44 @@ textarea {
   font-size: 1.5rem;
 }
 
-#instr-small {
+.small {
+  color: white;
   margin: 0;
   font-size: 2rem;
 }
 
-#instr-big {
+.big {
+  color: white;
   margin: 1rem 0 3rem 0;
   font-size: 4rem;
 }
 
+#contact-big{
+  color: Black;
+  margin: 1.5rem;
+}
+
+#contact-small{
+  color: #aaaaaa;
+}
+
+hr{
+  width: 30%;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+}
+
+#contact{
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width:50%;
+}
 
 #testimonial{
   background-image: url('../images/vr2.jpg');
@@ -161,6 +203,24 @@ h1 {
 .container span {
   font-size: 20px;
   margin-right: 15px;
+}
+
+canvas{
+  z-index: 1;
+  position: absolute;
+  background-color: black;
+}
+
+#form-text{
+  margin-top: 11rem;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 @media (max-width: 500px) {
