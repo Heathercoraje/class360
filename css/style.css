@@ -31,16 +31,16 @@
 
 #landing__text>h2 {
   margin: 0;
-  font-weight: 500;
-  font-size: 3.9rem;
+  font-weight: 400;
+  font-size: 4rem;
   margin-bottom: 0.8rem;
 }
 
 #landing__text>h4 {
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 0.8rem;
-  font-weight: normal;
+  font-weight: 300;
 }
 
 
@@ -52,7 +52,7 @@
   }*/
 
 .button__container {
-  margin-top: 11rem;
+  margin-top: 13.5rem;
   padding-left: 3.5rem;
   /*border:
 
