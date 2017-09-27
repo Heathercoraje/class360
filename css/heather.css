@@ -120,6 +120,7 @@
 }
 
 .helper {
+  /*border: blue 1px solid;*/
   display: flex;
   justify-content: space-between;
 }
@@ -132,21 +133,37 @@
   text-align: center;
   color: #4f4f4f;
   font-weight: 400;
-  font-size: 300%;
+  font-size: 350%;
+  margin-bottom: 3%;
 }
 
 .feature__container>p {
+  padding-top: 10%;
   text-align: center;
   color: #BDBDBD;
-  font-size: 120%;
+  font-size: 130%;
 }
 
 #feature {
   background-color: #fff;
 }
 
+.feature__list {
+  margin-top: 3%;
+  width: 85%;
+  /*border: 1px red solid;*/
+}
+
+li {
+  color: #727272;
+  list-style: none;
+  font-size: 135%;
+  padding: 2%;
+}
+
 .subejctIcon {
-  margin-left: 3.5%;
-  width: 6em;
-  height: 6em;
+  margin-top: 4%;
+  margin-left: 6.5%;
+  width: 6.2em;
+  height: 6.2em;
 }
