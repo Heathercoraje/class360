@@ -15,7 +15,7 @@ nav {
   top: 0;
   padding: 1rem 0;
   z-index: 999;
-  opacity:0.8;
+  opacity: 0.8;
   /*border: 0.1rem solid blue;*/
 }
 
@@ -49,7 +49,7 @@ section {
   height: 100vh;
 }
 
-#instructions{
+#instructions {
   position: relative;
 }
 
@@ -84,12 +84,12 @@ textarea {
 }
 
 .button, .button__instruct {
+  border: none;
+  background-color: #E28D9A;
   width: 15rem;
   height: 4rem;
   border-radius: 3rem;
-  border: 2px solid #00AA66;
   color: white;
-  background-color: #00AA66;
   font-size: 1.5rem;
 }
 
@@ -132,7 +132,8 @@ form {
   width: 100%;
   height: 80%;
 }
-#text{
+
+#text {
   width: 100%;
   height: 20%;
 }
@@ -161,40 +162,42 @@ canvas {
   border-radius: 5%;
 }
 
+
 /*for video container*/
-.container__video__instr{
-  display:none;
+
+.container__video__instr {
+  display: none;
   position: absolute;
   background-color: #eeefff;
   z-index: 9001;
   width: 100%;
   height: 100%;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
 }
 
-.container__video{
-  display:none;
+.container__video {
+  display: none;
   position: absolute;
   background-color: #eeeeee;
   z-index: 9001;
   width: 100%;
   height: 100%;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
 }
 
-iframe{
+iframe {
   width: 90vh;
   height: 55vh;
 }
 
-.for_flex{
+.for_flex {
   display: flex;
   align-items: center;
   justify-content: center;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 500px) {
