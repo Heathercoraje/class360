@@ -180,15 +180,49 @@ function stopVideo(target){
 	getVideoPlayer.src = temp;
 }
 
-function formAction(placeholder, e){
-	e.preventDefault();
-	// e.target.elements[0].value,e.target.elements[1].value,e.target.elements[2].value,e.target.elements[3].value
-	e.target.reset();
-}
+// function formAction(placeholder, e){
+// 	e.preventDefault();
+// 	// e.target.elements[0].value,e.target.elements[1].value,e.target.elements[2].value,e.target.elements[3].value
+// 	e.target.reset();
+// }
 
 listener('button__video', 'container__video', 'click', 'block');
 listener('button__instruct', 'container__video__instr', 'click', 'block');
 listener('container__video__instr', 'container__video__instr', 'click', 'none', stopVideo);
 listener('container__video', 'container__video', 'click', 'none', stopVideo);
 
-listener('form', null, 'submit', null, formAction);
+// listener('form', null, 'submit', null, formAction);
+
+var nav = document.getElementsByTagName("nav")[0];
+var landing = document.getElementById("landing");
+var image = document.getElementById("instruct-pic");
+var contact = document.getElementById("contact");
+nav.style.color = "white";
+
+window.addEventListener('scroll', e =>{
+	var navTop = nav.getBoundingClientRect().top;
+	var landingTop = landing.getBoundingClientRect().top;
+	// var imageTop = image.getBoundingClientRect().top;
+	var contactTop = contact.getBoundingClientRect().top;
+	var navBottom = nav.getBoundingClientRect().bottom;
+	var landingBottom = landing.getBoundingClientRect().bottom;
+	// var imageBottom = image.getBoundingClientRect().bottom;
+	var contactBottom = contact.getBoundingClientRect().bottom;
+
+
+	console.log('navBottom', navBottom, 'navTop', navTop);
+	console.log('contactBottom', contactBottom, 'contactTop', contactTop);
+	if(((landingTop <= navTop) && (navTop <= landingBottom)) &&
+		 ((landingTop <= navBottom) && (navBottom <= landingBottom)))
+			 nav.style.backgroundColor = 'transparent';
+	else if(((contactTop <= navTop) && (navTop <= contactBottom)) &&
+		 ((contactTop <= navBottom) && (navBottom <= contactBottom))){
+			 console.log('inside contact');
+			 nav.style.backgroundColor = 'transparent';
+	}
+	else {
+		nav.style.backgroundColor = '#888888';
+	}
+}
+  // console.log('nav',nav.getBoundingClientRect().bottom, 'landing',landing.getBoundingClientRect().bottom)
+);
