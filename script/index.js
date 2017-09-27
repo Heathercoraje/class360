@@ -31,8 +31,8 @@
 			this.x = Math.random() * canvas.width;
 			this.y = Math.random() * canvas.height;
 
-			this.vx = (config.velocity - (Math.random() * 0.5));
-			this.vy = (config.velocity - (Math.random() * 0.5));
+			this.vx = (config.velocity - (Math.random() * 0.1));
+			this.vy = (config.velocity - (Math.random() * 0.1));
 
 			this.radius = config.star.randomWidth ? (Math.random() * config.star.width) : config.star.width;
 		}
