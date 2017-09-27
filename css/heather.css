@@ -1,10 +1,9 @@
-
 /*section landing*/
 
 #landing {
   background-position: center;
   background-size: cover;
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/02.png');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/02.png');
 }
 
 #landing__content {
@@ -128,18 +127,25 @@
   display: block;
 }
 
+.feature__text>h2 {
+  text-align: center;
+  color: #4f4f4f;
+  font-weight: bold;
+  font-size: 40px
+}
+
 .feature__text>span {
   text-align: center;
   color: #BDBDBD;
   font-size: 16px:
 }
 
-.feature__text>h2 {
-  text-align: center;
-  color: #4f4f4f;
-  font-size: 40px
-}
-
 #feature {
   background-color: #fff;
+}
+
+.subejctIcon {
+  margin-left: 3.5%;
+  width: 6em;
+  height: 6em;
 }
