@@ -1,15 +1,11 @@
-// var background = document.getElementById('canvas');
-//
-// canvas.width = window.innerWidth;
-// canvas.height = window.innerHeight;
-
-	function Constellation (options) {
+//animation for contact page
+	function Constellation () {
 		var archorPoint = document.getElementById('canvas');
 
 		var context = canvas.getContext('2d');
 		var defaults = {
 				star: {
-					color: 'rgba(255, 255, 255, .5)',
+					color: 'rgba(255, 255, 255, .9)',
 					width: 5,
 					randomWidth: true
 				},
@@ -23,13 +19,13 @@
 				},
 				width: window.innerWidth,
 				height: window.innerHeight,
-				velocity: 1,
+				velocity: 0.1,
 				length: 300,
 				distance: 80,
 				radius: 200,
 				stars: []
 			};
-		var config = Object.assign({}, defaults, options);
+		var config = Object.assign({}, defaults);
 
 		function Star () {
 			this.x = Math.random() * canvas.width;
@@ -78,13 +74,14 @@
 					for (j = 0; j < length; j++) {
 						iStar = config.stars[i];
 						jStar = config.stars[j];
-
+						//for distance between stars
 						if (
 							(iStar.x - jStar.x) < config.distance &&
 							(iStar.y - jStar.y) < config.distance &&
 							(iStar.x - jStar.x) > - config.distance &&
 							(iStar.y - jStar.y) > - config.distance
 						) {
+							//for mouse interaction
 							if (
 								(iStar.x - config.position.x) < config.radius &&
 								(iStar.y - config.position.y) < config.radius &&
@@ -147,11 +144,10 @@
 			}.bind(this));
 		};
 
-		this.bind = function () {
+		this.mouse = function () {
 			archorPoint.addEventListener('mousemove', function(e){
 				config.position.x = e.clientX;
 				config.position.y = e.clientY;
-        console.log('move');
 			});
 		};
 
@@ -160,9 +156,39 @@
 			this.setContext();
 			this.setInitialPosition();
 			this.loop(this.createStars);
-			this.bind();
+			this.mouse();
 		};
 	}
 
   var c = new Constellation();
 			c.init();
+
+//listeners
+function listener(buttonClass, targetClass, event, state, cb){
+	var addElementListener = document.getElementsByClassName(buttonClass)[0];
+	var target = document.getElementsByClassName(targetClass)[0];
+	addElementListener.addEventListener(event,
+	e => {
+		if(state)target.style.display = state;
+		if(cb)cb(target, e);
+	});
+}
+
+function stopVideo(target){
+	var getVideoPlayer = target.querySelector('iframe');
+	var temp = getVideoPlayer.src;
+	getVideoPlayer.src = temp;
+}
+
+function formAction(placeholder, e){
+	e.preventDefault();
+	// e.target.elements[0].value,e.target.elements[1].value,e.target.elements[2].value,e.target.elements[3].value
+	e.target.reset();
+}
+
+listener('button__video', 'container__video', 'click', 'block');
+listener('button__instruct', 'container__video__instr', 'click', 'block');
+listener('container__video__instr', 'container__video__instr', 'click', 'none', stopVideo);
+listener('container__video', 'container__video', 'click', 'none', stopVideo);
+
+listener('form', null, 'submit', null, formAction);
