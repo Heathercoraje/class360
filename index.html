@@ -46,77 +46,93 @@
   </nav>
 
   <section id="feature">
-    <div id="feature__container" class="feature__container">
-      <p>Feature</p>
-      <h2>Class360 brings fun to classroom</h2>
+    <div id="feature__container" class="feature-container">
+      <h2 class="section-title">Feature</h2>
+      <h2 class="section-sub-title">Class360 brings fun to your classroom</h2>
       <div class="helper">
-
-        <div id="feature__left" class="feature__right">
-          <div class="feature__list">
+        <div id="feature__left" class="feature-right">
+          <div class="feature-list">
             <ul>
               <li><strong>Maximze learning</strong> with more interactive lessons in class by offering vivid learning experience to students in unfamiliar subjects</li>
               <li><strong>A great variety in virtual reality content</strong> tailored for kids from biology, human body to geology and more! </li>
               <li><strong>Reasonable price and discount</strong> for longer subscription. Class360 offers great price for educational institutes. </li>
             </ul>
           </div>
-          <div class="feature__subjectIcons">
-            <img class="subejctIcon" src="./images/vrphone.svg" alt="vrphone">
-            <img class="subejctIcon" src="./images/biology.svg" alt="biology">
-            <img class="subejctIcon" src="./images/science.svg" alt="science">
-            <img class="subejctIcon" src="./images/planet.svg" alt="planet">
+          <div class="icon-container">
+            <img class="icon-subject" src="./assets/vrphone.svg" alt="vrphone">
+            <img class="icon-subject" src="./assets/biology.svg" alt="biology">
+            <img class="icon-subject" src="./assets/science.svg" alt="science">
+            <img class="icon-subject" src="./assets/planet.svg" alt="planet">
           </div>
         </div>
-        <div class="feature__right">
-          <img style="width: 18em; height: 30em;" src="./images/apppreview.png" alt="app-preview">
-
+        <div class="feature-right">
+          <img style="width: 18em; height: 30em;" src="./assets/apppreview.png" alt="app-preview">
         </div>
       </div>
     </div>
     </div>
   </section>
+
   <section id="instructions">
-    <div id="instruct-pic">
-      <p class="small">Instructions</p>
-      <p class="big">How to start Class360</p>
-      <button class="button__instruct">Watch Video</button>
+    <div class="instruct-img">
+      <p class="title-instruct">Instructions</p>
+      <p class='sub-title-instruct'>How to start Class360</p>
+      <button class="button-instruct">Watch Video</button>
     </div>
-    <div class="container__video__instr">
-      <div class="for_flex">
+    <div class="container-video-instr">
+      <div class="container-video-helper">
         <iframe id="instructions__video" src="https://www.youtube.com/embed/qombzpXJuwg" frameborder=0 allowfullscreen></iframe>
       </div>
     </div>
   </section>
-  <section id="testimonial" class="section4">
-    <h2 class="something">Testimonials</h2>
-    <h4 class="something1">Join hundreds of school that use Class360</h4>
-    <div class="slider">
-      <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
-      <input type="radio" name="slider" title="slide2" class="slider__nav" />
-      <input type="radio" name="slider" title="slide3" class="slider__nav" />
-      <input type="radio" name="slider" title="slide4" class="slider__nav" />
-      <div class="slider__inner">
-        <div class="slider__contents">
-          <h2 class="slider__caption">Sameer Mahamed
-          <br> CEO Alahlya Umm-Elfahem high School</h2>
-          <p class="slider__txt">"Class360 saved our school future"</p>
+
+  <section id="testimonial" class="testimonial">
+    <div class="testimonial-content">
+    <h2 class="section-title">Testimonials</h2>
+    <h2 class="section-sub-title">Join hundreds of school that use Class360</h2>
+    <div class="sliders-container">
+      <div class="slide-card">
+          <div class="inner-card">
+            <img class='icon-teacher'src="assets/teacher.png" alt="">
+            <h1>Sameer Mahamed<h1>
+            <h2> CEO Alahlya Umm-Elfahem high School</h2>
+            <hr />
+            <p><em>"Class360 saved our school future"</em></p>
+          </div>
+      </div>
+        <div class="slide-card">
+          <div class="inner-card">
+            <img class='icon-teacher'src="assets/teacher.png" alt="">
+            <h1>Shoroq Abo Ahmad <h1>
+            <h2> CEO Alsharq Elementary School</h2>
+            <hr />
+            <p>"Nothing is better than Class360"</p>
         </div>
-        <div class="slider__contents">
-          <h2 class="slider__caption">Shoroq Abo Ahmad
-          <br> CEO Alsharq Elementary School</h2>
-          <p class="slider__txt">"Nothing is better than Class360"</p>
+      </div>
+      <div class="slide-card">
+        <div class="inner-card">
+          <img class='icon-teacher'src="assets/teacher.png" alt="">
+          <h1> Sina Shahbary</h1>
+          <h2> CEO Alhekma high school</h2>
+          <hr />
+          <p>"Class 360 is the Best education in the best way"</p>
         </div>
-        <div class="slider__contents">
-          <h2 class="slider__caption">Sina Shahbary
-          <br> CEO Alhekma high school</h2>
-          <p class="slider__txt">"Class 360 is the Best education in the best way"</p>
-        </div>
-        <div class="slider__contents">
-          <h2 class="slider__caption">Soher AbedAlrezeq
-          <br> CEO Alhorsh elementary school</h2>
-          <p class="slider__txt">"The smiles on the students face and the creativity is when they use Class360"</p>
+      </div>
+      <div class="slide-card">
+        <div class="inner-card">
+          <img class='icon-teacher'src="assets/teacher.png" alt="">
+          <h1>Soher AbedAlrezeq</h1>
+          <h2>CEO Alhorsh elementary school</h2>
+          <hr />
+          <p>"The smiles on the students face and the creativity is when they use Class360"</p>
         </div>
       </div>
     </div>
+    <div class='button-next-container'>
+      <button class="button-next" onclick="rotateCard(1)">&#10095;</button>
+    </div>
+  </div>
+</div>
   </section>
 
 
@@ -149,6 +165,7 @@
       </ul>
     </div>
   </section>
+
   <section id="contact">
     <canvas id="canvas"></canvas>
     <div id="form-text">

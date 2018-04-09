@@ -188,14 +188,39 @@ listener('button-video', 'container-video', 'click', 'block');
 listener('container-video', 'container-video', 'click', 'none', stopVideo);
 
 // video on #instruction
-listener('button__instruct', 'container__video__instr', 'click', 'block');
+listener('button-instruct', 'container-video-instr', 'click', 'block');
 listener(
-	'container__video__instr',
-	'container__video__instr',
+	'container-video-instr',
+	'container-video-instr',
 	'click',
 	'none',
 	stopVideo
 );
+
+// slide-cards in testimonial
+var slideIndex = 1;
+showSlideCard(slideIndex);
+
+function showSlideCard(n) {
+	var i;
+	var x = document.getElementsByClassName('slide-card');
+	if (n > x.length) {
+		slideIndex = 1;
+	}
+	if (n < 1) {
+		slideIndex = x.length;
+	}
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = 'none';
+	}
+	x[slideIndex - 1].style.display = 'block';
+}
+function rotateCard(n) {
+	showSlideCard((slideIndex += n));
+}
+setInterval(() => {
+	rotateCard(1);
+}, 3000);
 
 // for nav bar color (transparent) effect for first and last section
 window.addEventListener('scroll', e => {

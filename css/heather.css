@@ -8,15 +8,14 @@ body {
 }
 
 nav {
-	color: #fff;
 	display: flex;
 	justify-content: center;
 	position: fixed;
 	width: 100%;
 	top: 0;
-	padding: 1.5rem 0;
+	padding: 1rem 0;
 	z-index: 999;
-	opacity: 0.85;
+	opacity: 0.8;
 }
 
 .nav-content {
@@ -84,7 +83,8 @@ a {
 	margin-top: 3vh;
 }
 
-.container-video {
+.container-video,
+.container-video-instr {
 	display: none;
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -130,8 +130,8 @@ iframe {
 .arrow {
 	/*border: 1px red solid;*/
 	position: fixed;
-	width: 20px;
-	height: 20px;
+	width: 2vw;
+	height: 2vw;
 	margin-left: -20px;
 	left: 50%;
 	bottom: 1rem;
@@ -168,62 +168,144 @@ iframe {
 	}
 }
 
-/*section feature*/
+/* feature*/
 
-.feature__container {
-	width: 80%;
-	height: 80%;
-	margin: 0 auto;
-	margin-top: 10%;
-	/*border: 1px solid blue;*/
+#feature {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
 }
 
+.feature-container {
+	width: 85%;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 15vh;
+	clear: both;
+}
 .helper {
-	/*border: blue 1px solid;*/
 	display: flex;
 	justify-content: space-between;
 }
 
-.feature__container > p,
-h2 {
-	display: block;
-}
-
-.feature__container > h2 {
+.section-title {
+	margin: 5vh 0;
+	color: #767676;
 	text-align: center;
-	color: #4f4f4f;
-	font-weight: 400;
-	font-size: 350%;
-	margin-bottom: 3%;
+	font-size: 2vw;
+	font-weight: 600;
 }
 
-.feature__container > p {
-	padding-top: 10%;
+.section-sub-title {
 	text-align: center;
 	color: #bdbdbd;
-	font-size: 130%;
 }
 
-#feature {
-	background-color: #fff;
-}
-
-.feature__list {
+.feature-list {
 	margin-top: 3%;
 	width: 85%;
-	/*border: 1px red solid;*/
 }
 
 li {
+	padding: 1vh 3vw;
 	color: #727272;
 	list-style: none;
-	font-size: 135%;
-	padding: 2%;
+	font-size: 1.4vw;
 }
 
-.subejctIcon {
+.icon-subject {
 	margin-top: 4%;
-	margin-left: 6.5%;
-	width: 6.2em;
-	height: 6.2em;
+	margin-left: 5vw;
+	width: 7vw;
+	height: 7vw;
+}
+
+/* instruction  */
+
+#instructions {
+	color: #fff;
+	letter-spacing: 0.2vw;
+}
+.instruct-img {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url('../assets/instructions.png');
+	background-size: cover;
+	position: relative;
+	top: 11rem;
+	width: 100%;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.title-instruct {
+	margin: 1vh;
+	font-size: 4vw;
+}
+.sub-title-instruct {
+	margin: 2vh;
+	font-size: 1.5vw;
+}
+.button-instruct {
+	color: #fff;
+	background-color: #e28d9a;
+	padding: 0.5rem;
+	width: 12vw;
+	height: 3rem;
+	border: none;
+	border-radius: 1.7rem;
+	font-size: 1.2vw;
+}
+
+.testimonial-content {
+	width: 85%;
+	margin: 0 auto;
+	height: 100%;
+}
+.sliders-container {
+	width: 50vw;
+	height: 50vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.icon-teacher {
+	padding: 2vh;
+	width: 12vh;
+}
+.slide-card {
+	text-align: center;
+	width: 70%;
+	height: 90%;
+	border-radius: 0.5rem;
+	color: #434343;
+	background-color: lightgray;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+}
+.inner-card {
+	text-align: center;
+	margin: 0 auto;
+	width: 300px;
+	height: 150px;
+}
+
+.button-next-container {
+	text-align: center;
+}
+
+.button-next {
+	outline: none;
+	border: none;
+	color: white;
+	border-radius: 10rem;
+	width: 4vw;
+	height: 2rem;
+	font-size: 1.5rem;
+	background-color: pink;
 }
