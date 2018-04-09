@@ -7,15 +7,14 @@
   <link rel="stylesheet" href="css/leo.css">
   <link rel="stylesheet" href="css/heather.css">
   <link rel="stylesheet" href="css/sajeda.css">
-  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed:400,400i,500,500i,600,600i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400|Source+Serif+Pro:400,600,700" rel="stylesheet">
 </head>
 
 <body>
   <nav>
-    <div id="nav-content">
-      <a href="#landing" id="nav-left">Class360</a>
-      <div id="nav-right">
-        <a href="#">Home</a>
+    <div id="nav__content" class='nav-content'>
+      <a class='logo' href="#landing" >Class360</a>
+      <div class="nav-items-right">
         <a href="#feature">Feature</a>
         <a href="#instructions">Instructions</a>
         <a href="#testimonial">Testimonial</a>
@@ -23,29 +22,25 @@
         <a href="#contact">Contact</a>
       </div>
     </div>
-
   </nav>
+
   <section id="landing">
-    <div id="landing__content" class="landing__content">
-      <div id="landing__text" class="landing__text">
-        <h2 id="title">Explore the World</br> with Class360</h2>
-        <h4>Immersive learning</br>through reality glasses in the class</h4>
+    <div id="landing__content" class="landing-content">
+      <div id="landing__title" class="landing-title">
+        <p class="title">Explore the World</br> with Class360</p>
+        <p class="title-sub">Immersive learning through VR in class</p>
       </div>
-      <div class="container__video">
-        <div class="for_flex">
+      <div class="container-video">
+        <div class="container-video-helper">
           <iframe id="landing__video" src="https://www.youtube.com/embed/EXYzj6qwCCk" frameborder=0 allowfullscreen></iframe>
         </div>
       </div>
+      <div class="button-container">
+        <button type="button" class="button-video">Watch Video</button>
+        <button type="button" class="button-beta">Try beta service</button>
+      </div>
     </div>
-
-    <img class="arrow bounce" src="images/arrow.svg" alt="arrow">
-
-    <div class="button__container">
-      <button type="button" class="button__video">Watch Video</button>
-      <button type="button" class="button__beta">Try beta service</button>
-
-    </div>
-
+    <img class="arrow bounce" src="assets/arrow.svg" alt="arrow">
   </section>
 
   </nav>
