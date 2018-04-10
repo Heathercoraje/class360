@@ -7,7 +7,22 @@ body {
 	padding: 0;
 }
 
+hr {
+	width: 40%;
+	border: 1px solid #ccc;
+	margin-bottom: 1.5rem;
+}
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+section {
+	overflow: hidden;
+}
+
 nav {
+	color: #fff;
 	display: flex;
 	justify-content: center;
 	position: fixed;
@@ -42,9 +57,13 @@ a {
 	font-size: 1.3vw;
 }
 
+/* sections */
+
 /* landing */
 
 #landing {
+	width: 100%;
+	height: 100vh;
 	color: #fff;
 	background-position: center;
 	background-size: cover;
@@ -120,7 +139,7 @@ iframe {
 
 .button-video {
 	margin-right: 1.2rem;
-	background-color: #cd4957;
+	background-color: #c73e4c;
 }
 
 .button-beta {
@@ -128,7 +147,6 @@ iframe {
 }
 
 .arrow {
-	/*border: 1px red solid;*/
 	position: fixed;
 	width: 2vw;
 	height: 2vw;
@@ -173,7 +191,7 @@ iframe {
 #feature {
 	background-color: #fff;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 
 .feature-container {
@@ -223,6 +241,8 @@ li {
 /* instruction  */
 
 #instructions {
+	width: 100%;
+	height: 100vh;
 	color: #fff;
 	letter-spacing: 0.2vw;
 }
@@ -259,14 +279,20 @@ li {
 	font-size: 1.2vw;
 }
 
+/* testimonial */
+
+#testimonial {
+	width: 100%;
+	height: 100vh;
+}
 .testimonial-content {
 	width: 85%;
+	height: 75%;
 	margin: 0 auto;
-	height: 100%;
 }
 .sliders-container {
 	width: 50vw;
-	height: 50vh;
+	height: 80%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -274,25 +300,19 @@ li {
 	align-items: center;
 }
 .icon-teacher {
-	padding: 2vh;
-	width: 12vh;
+	padding: 5%;
+	width: 35%;
 }
 .slide-card {
 	text-align: center;
 	width: 70%;
 	height: 90%;
-	border-radius: 0.5rem;
+	border-radius: 1%;
 	color: #434343;
-	background-color: lightgray;
+	background-color: #f6f6f6;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 	display: flex;
 	flex-direction: column;
-}
-.inner-card {
-	text-align: center;
-	margin: 0 auto;
-	width: 300px;
-	height: 150px;
 }
 
 .button-next-container {
@@ -308,4 +328,196 @@ li {
 	height: 2rem;
 	font-size: 1.5rem;
 	background-color: pink;
+}
+
+.teacher-name {
+	margin: 0;
+	font-size: 1.7vw;
+	font-weight: bold;
+}
+.teacher-from {
+	margin: 0;
+	font-size: 1.2vw;
+}
+.review {
+	margin: 0;
+	font-size: 1vw;
+	font-style: italic;
+}
+.text-box {
+	padding: 1vw 4vw;
+}
+
+/* pricing */
+
+#pricing {
+	width: 100%;
+	height: 100vh;
+}
+.pricing-content {
+	margin-top: 5%;
+	width: 100%;
+	height: 80%;
+}
+.container-columns {
+	margin: 5% auto;
+	width: 90%;
+	height: 60%;
+}
+.column {
+	float: left;
+	width: 30%;
+	margin-left: 3%;
+}
+.price {
+	border-radius: 15px;
+	list-style-type: none;
+	border: 1px solid #eee;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.price:hover {
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price .header {
+	color: #434343;
+	font-size: 1.8vw;
+	font-weight: bold;
+}
+
+.price li {
+	border-bottom: 1px solid #eee;
+	padding: 20px;
+	text-align: center;
+	font-size: 1.3vw;
+}
+
+/* contact */
+
+#contact {
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	letter-spacing: 0.1vw;
+}
+
+canvas {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	background-color: black;
+}
+
+.form-container {
+	top: 25%;
+	z-index: 999;
+	position: relative;
+	width: 40%;
+	height: 65%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	background-color: #000000;
+	opacity: 0.9;
+	margin: auto;
+	border-radius: 25px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+input,
+textarea {
+	border-style: solid;
+	outline: none;
+	cursor: pointer;
+	border-color: #eeeeef;
+	width: 80%;
+	margin: 0.8vh;
+	border-radius: 0.5rem;
+}
+
+input {
+	height: 7vh;
+}
+textarea {
+	height: 25vh;
+}
+input::placeholder,
+textarea::placeholder,
+input,
+textarea {
+	font-size: 1vw;
+}
+
+.button-submit {
+	letter-spacing: 0.1vw;
+	background-color: #f58092;
+	border-radius: 25px;
+	font-size: 1vw;
+	color: white;
+	width: 10vw;
+	height: 8vh;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.form-title {
+	font-size: 2.5vw;
+	font-weight: bold;
+	margin: 1rem 0;
+	letter-spacing: 0.3vw;
+}
+
+.form-sub {
+	margin-bottom: 1rem;
+	letter-spacing: 0.2vw;
+	font-size: 1.5vw;
+	font-weight: bold;
+}
+
+.container-video-instr {
+	display: none;
+	background-color: #eeefff;
+	position: absolute;
+	z-index: 9001;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+iframe {
+	width: 90vh;
+	height: 55vh;
+}
+
+/*for video container*/
+/* solve this later  with js*/
+
+/* responsiveness */
+
+@media (max-width: 500px) {
+	.container {
+		text-align: center;
+	}
+	.container img {
+		margin: auto;
+		float: none;
+		display: block;
+	}
 }
