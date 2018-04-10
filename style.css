@@ -68,7 +68,7 @@ a {
 	background-position: center;
 	background-size: cover;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-		url('../assets/02.png');
+		url('assets/02.png');
 }
 
 .landing-content {
@@ -251,7 +251,7 @@ iframe {
 }
 .instruct-img {
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url('../assets/instructions.png');
+		url('assets/instructions.png');
 	background-size: cover;
 	position: relative;
 	top: 11rem;
