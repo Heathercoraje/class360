@@ -317,16 +317,16 @@ iframe {
 
 .teacher-name {
 	margin: 0;
-	font-size: 6vmin;
+	font-size: 5vw;
 	font-weight: bold;
 }
 .teacher-from {
 	margin: 0;
-	font-size: 4vmin;
+	font-size: 4.5vw;
 }
 .review {
 	margin: 0;
-	font-size: 3.5vmin;
+	font-size: 3.5vw;
 	font-style: italic;
 }
 .text-box {
@@ -348,9 +348,9 @@ iframe {
 	flex-direction: column;
 }
 .container-columns {
-	margin: 5% auto;
+	margin: 5vh auto;
 	width: 90%;
-	height: 60%;
+	height: 70%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -732,13 +732,13 @@ iframe {
 	}
 
 	.teacher-name {
-		font-size: 3.2vmin;
+		font-size: 3vw;
 	}
 	.teacher-from {
-		font-size: 2vmin;
+		font-size: 2vw;
 	}
 	.review {
-		font-size: 2vmin;
+		font-size: 2vw;
 	}
 
 	/* pricing */
@@ -750,13 +750,12 @@ iframe {
 		margin-top: 1vh;
 	}
 	.container-columns {
+		margin: 2vw auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	#pricing > .pricing-content > .title-container {
-		height: 10vh;
-	}
+
 	.column {
 		width: 85%;
 		margin-bottom: 2vh;
@@ -820,8 +819,50 @@ iframe {
 		width: 7vw;
 	}
 	/* instruction */
-
 	.instruct-img {
 		height: 65vh;
+	}
+	/* testimonial */
+
+	.slide-card {
+		width: 38vw;
+	}
+	.teacher-name {
+		font-size: 4vmin;
+	}
+	.teacher-from {
+		font-size: 2.5vmin;
+	}
+	.review {
+		font-size: 2vmin;
+	}
+	/* pricing */
+	.pricing-content {
+		margin-top: 2vw;
+	}
+	.section-title {
+		font-size: 2vw;
+	}
+	.section-sub-title {
+		margin: 2vh auto;
+		font-size: 2.5vw;
+	}
+
+	.container-columns {
+		margin: 2vh auto;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.column {
+		width: 30%;
+		margin-left: 2%;
+	}
+	.price li {
+		padding: 2vh;
+		font-size: 1.3vw;
+	}
+	/* contact  */
+	.form-container {
+		width: 45%;
 	}
 }
