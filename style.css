@@ -54,12 +54,18 @@ a {
 }
 
 .nav-items-right {
-	font-size: 1.3vw;
+	font-size: 1.5vw;
 }
+
+/* mobile first */
 
 /* sections */
 
 /* landing */
+
+/* @media (min-width:) {
+
+} */
 
 #landing {
 	width: 100%;
@@ -88,13 +94,13 @@ a {
 .title {
 	margin: 0;
 	letter-spacing: 0.05vw;
-	font-size: 4.7vw;
+	font-size: 8vmin;
 	font-weight: 400;
 }
 
 .title-sub {
 	margin: 1vh 0;
-	font-size: 1.8vw;
+	font-size: 4vmin;
 	font-weight: 300;
 }
 
@@ -226,20 +232,23 @@ iframe {
 }
 
 .feature-list > ul > li {
-	padding: 1vh 3vw;
+	padding: 1vh 1vw;
 	color: #727272;
 	list-style: none;
-	font-size: 1.5vw;
+	font-size: 2.7vmin;
 	margin-bottom: 2vh;
 }
 
 .icon-subject {
-	margin-top: 4%;
+	margin-top: 5vh;
 	margin-left: 5vw;
 	width: 7vw;
-	height: 7vw;
+	height: 15vh;
 }
-
+.app-preview {
+	width: 38vmin;
+	height: 65vmin;
+}
 /* instruction  */
 
 #instructions {
@@ -288,15 +297,27 @@ iframe {
 #testimonial {
 	width: 100%;
 	height: 100vh;
+	border: 2px blue solid;
+	display: flex;
+	justify-content: center;
 }
 .testimonial-content {
-	width: 85%;
-	height: 75%;
-	margin: 0 auto;
+	border: 1px pink solid;
+	width: 85vw;
+	height: 90vh;
+	margin-top: 5vh;
+	display: flex;
+	flex-direction: column;
 }
+.title-container {
+	border: 1px aqua solid;
+	height: 20vh;
+}
+
 .sliders-container {
+	border: 1px hotpink solid;
 	width: 50vw;
-	height: 80%;
+	height: 80vh;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -304,13 +325,14 @@ iframe {
 	align-items: center;
 }
 .icon-teacher {
-	padding: 5%;
+	padding-top: 2vh;
 	width: 35%;
 }
 .slide-card {
 	text-align: center;
 	width: 70%;
-	height: 90%;
+	border: 2px red solid;
+	height: 55vh;
 	border-radius: 1%;
 	color: #434343;
 	background-color: #f6f6f6;
@@ -335,17 +357,18 @@ iframe {
 }
 
 .teacher-name {
+	flex: 0 1 auto;
 	margin: 0;
-	font-size: 1.7vw;
+	font-size: 4vmin;
 	font-weight: bold;
 }
 .teacher-from {
 	margin: 0;
-	font-size: 1.2vw;
+	font-size: 3vmin;
 }
 .review {
 	margin: 0;
-	font-size: 1.1vw;
+	font-size: 2vmin;
 	font-style: italic;
 }
 .text-box {
@@ -389,7 +412,7 @@ iframe {
 
 .price .header {
 	color: #434343;
-	font-size: 1.8vw;
+	font-size: 3.5vmin;
 	font-weight: bold;
 }
 
@@ -397,7 +420,7 @@ iframe {
 	border-bottom: 1px solid #eee;
 	padding: 20px;
 	text-align: center;
-	font-size: 1.3vw;
+	font-size: 2.5vmin;
 }
 
 /* contact */
@@ -420,11 +443,11 @@ canvas {
 }
 
 .form-container {
-	top: 25%;
+	top: 20%;
 	z-index: 999;
 	position: relative;
-	width: 40%;
-	height: 65%;
+	width: 45%;
+	height: 65vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -471,6 +494,7 @@ textarea {
 .button-submit {
 	background-color: #f58092;
 	font-size: 1.5vw;
+	padding: 1vh;
 	width: 10vw;
 }
 
