@@ -42,7 +42,9 @@ nav {
 	z-index: 999;
 	opacity: 0.8;
 }
-
+button {
+	width: 40vw;
+}
 #landing {
 	margin-top: 12vh;
 	height: 88vh;
@@ -63,7 +65,7 @@ nav {
 }
 
 .landing-title {
-	margin-top: 18vh;
+	margin-top: 22vh;
 	text-align: center;
 }
 
@@ -90,7 +92,6 @@ nav {
 .button-video {
 	padding: 1vh;
 	margin-top: 2vh;
-	width: 40vw;
 	height: 6vh;
 	font-size: 4vmin;
 	border: none;
@@ -174,7 +175,7 @@ iframe {
 }
 
 .feature-content {
-	width: 85%;
+	width: 90%;
 	height: 100%;
 	margin: 0 auto;
 	margin-top: 15vh;
@@ -232,7 +233,7 @@ iframe {
 #instructions {
 	position: relative;
 	width: 100%;
-	height: 80vh;
+	height: 100vh;
 	color: #fff;
 	letter-spacing: 0.2vw;
 }
@@ -264,7 +265,6 @@ iframe {
 	color: #fff;
 	background-color: #e28d9a;
 	padding: 0.5rem;
-	width: 30vw;
 	height: 6vh;
 	border-radius: 30px;
 	font-size: 3vmin;
@@ -301,11 +301,11 @@ iframe {
 .icon-teacher {
 	padding-top: 4vh;
 	padding-bottom: 2vh;
-	width: 45%;
+	width: 40%;
 }
 .slide-card {
 	text-align: center;
-	width: 70%;
+	width: 80vw;
 	height: 55vh;
 	border-radius: 1%;
 	color: #434343;
@@ -504,7 +504,9 @@ iframe {
 		z-index: 999;
 		opacity: 0.8;
 	}
-
+	button {
+		width: 20vw;
+	}
 	.nav-content {
 		width: 90%;
 		display: flex;
@@ -576,7 +578,6 @@ iframe {
 	.button-beta,
 	.button-video {
 		padding: 1vh;
-		width: 20vw;
 		font-size: 2.2vmin;
 	}
 
@@ -607,13 +608,7 @@ iframe {
 
 	.button-video {
 		margin-right: 1.2rem;
-		background-color: #c73e4c;
 	}
-
-	.button-beta {
-		background-color: #e28d9a;
-	}
-
 	.arrow {
 		display: block;
 		position: fixed;
@@ -653,10 +648,6 @@ iframe {
 			-webkit-transform: translateY(-10px);
 			transform: translateY(-10px);
 		}
-	}
-
-	.nav-items-right {
-		font-size: 2vw;
 	}
 
 	/* feature */
@@ -720,7 +711,6 @@ iframe {
 	}
 	.button-instruct,
 	.button-submit {
-		width: 16vmin;
 		font-size: 1.8vmin;
 		height: 7vmin;
 	}
@@ -733,7 +723,9 @@ iframe {
 		width: 70vw;
 		height: 50vh;
 	}
-
+	.slide-card {
+		width: 55vw;
+	}
 	.icon-teacher {
 		padding-top: 2vh;
 		width: 35%;
@@ -799,5 +791,37 @@ iframe {
 
 	.form-sub {
 		font-size: 4vmin;
+	}
+}
+@media (min-width: 900px) {
+	button {
+		width: 15vw;
+		font-size: 2.2vmin;
+	}
+	.logo {
+		font-size: 2vw;
+	}
+	.nav-items-right {
+		font-size: 1.3vw;
+	}
+	.landing-title {
+		margin-top: 15vh;
+	}
+	.title {
+		font-size: 8vmin;
+	}
+	.feature-content {
+		width: 80vw;
+	}
+	.feature-list > ul > li {
+		text-align: left;
+	}
+	.icon-subject {
+		width: 7vw;
+	}
+	/* instruction */
+
+	.instruct-img {
+		height: 65vh;
 	}
 }
