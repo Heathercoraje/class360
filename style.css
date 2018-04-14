@@ -29,6 +29,15 @@ a {
 }
 /* mobile first */
 
+/* mobile only */
+/*
+nav-content {
+	display: flex;
+	flex-direction: column;
+}
+nav {
+	height: 11vh;
+} */
 nav {
 	background-color: #434343;
 	border: none;
