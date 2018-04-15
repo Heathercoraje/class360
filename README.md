@@ -1,8 +1,8 @@
 # Class360
 
-Class360 is VR device startup based in Haifa, Israel.
+Class360 is a virtual reality based startup based in Haifa, Israel.
 
-CLass360 offers high quality and easy-to-configure Virtual Reality Device and educational content for kids from range of elementary schooler to higher education institute.
+Class360 offers high quality and easy-to-configure Virtual Reality Device and subscription to vast educational content for kids from range of elementary schooler to higher education institute.
 
 <img src="assets/class360.png" width="500" display="inline">
 
