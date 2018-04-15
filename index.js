@@ -167,6 +167,7 @@ var c = new Constellation();
 c.init();
 
 //listeners for button manipulation
+// listener('form', null, 'submit', null, formAction);
 function listener(buttonClass, targetClass, event, state, cb) {
 	var addElementListener = document.getElementsByClassName(buttonClass)[0];
 	var target = document.getElementsByClassName(targetClass)[0];
@@ -175,18 +176,14 @@ function listener(buttonClass, targetClass, event, state, cb) {
 		if (cb) cb(target, e);
 	});
 }
-
 function stopVideo(target) {
 	var getVideoPlayer = target.querySelector('iframe');
 	var temp = getVideoPlayer.src;
 	getVideoPlayer.src = temp;
 }
-
-// listener('form', null, 'submit', null, formAction);
 // video on #landing
 listener('button-video', 'container-video', 'click', 'block');
 listener('container-video', 'container-video', 'click', 'none', stopVideo);
-
 // video on #instruction
 listener('button-instruct', 'container-video-instr', 'click', 'block');
 listener(
@@ -197,7 +194,7 @@ listener(
 	stopVideo
 );
 
-// slide-cards in testimonial
+// slide-cards in testimonial section
 var slideIndex = 1;
 showSlideCard(slideIndex);
 
@@ -222,31 +219,34 @@ setInterval(() => {
 	rotateCard(1);
 }, 3000);
 
-// for nav bar color (transparent) effect for first and last section
+// for nav bar backgroundColor for first and last section
 window.addEventListener('scroll', e => {
 	var nav = document.getElementsByTagName('nav')[0];
 	var landing = document.getElementById('landing');
 	var contact = document.getElementById('contact');
-	nav.style.color = 'white'; // this has to move to style sheet for
 	var navTop = nav.getBoundingClientRect().top;
 	var landingTop = landing.getBoundingClientRect().top;
 	var contactTop = contact.getBoundingClientRect().top;
 	var navBottom = nav.getBoundingClientRect().bottom;
 	var landingBottom = landing.getBoundingClientRect().bottom;
 	var contactBottom = contact.getBoundingClientRect().bottom;
+	var isSmallDevice = Boolean(650 > window.innerWidth);
 	if (
+		!isSmallDevice &&
 		landingTop <= navTop &&
 		navTop <= landingBottom &&
 		(landingTop <= navBottom && navBottom <= landingBottom)
-	)
+	) {
 		nav.style.backgroundColor = 'transparent';
-	else if (
+	} else if (
+		!isSmallDevice &&
 		contactTop <= navTop &&
 		navTop <= contactBottom &&
 		(contactTop <= navBottom && navBottom <= contactBottom)
 	) {
-		console.log('inside contact');
 		nav.style.backgroundColor = 'transparent';
+	} else if (isSmallDevice) {
+		nav.style.backgroundColor = '#000';
 	} else {
 		nav.style.backgroundColor = '#888888';
 	}
